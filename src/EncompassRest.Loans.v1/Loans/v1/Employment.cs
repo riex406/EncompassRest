@@ -218,7 +218,7 @@ public sealed partial class Employment : DirtyExtensibleObject, IIdentifiable
     /// <summary>
     /// Employment MonthlyIncomeAmount
     /// </summary>
-    public int? MonthlyIncomeAmount { get => GetValue<int?>(); set => SetValue(value); }
+    public decimal? MonthlyIncomeAmount { get => GetValue<decimal?>(); set => SetValue(value); }
 
     /// <summary>
     /// Employment NoLinkToDocTrackIndicator [BENN97], [CENN97]

@@ -204,7 +204,7 @@ public sealed partial class Residence : DirtyExtensibleObject, IIdentifiable
     /// <summary>
     /// Residence Rent [BRNN16], [CRNN16]
     /// </summary>
-    public int? Rent { get => GetValue<int?>(); set => SetValue(value); }
+    public decimal? Rent { get => GetValue<decimal?>(); set => SetValue(value); }
 
     /// <summary>
     /// Residence RequestDate [BRNN98], [CRNN98]
