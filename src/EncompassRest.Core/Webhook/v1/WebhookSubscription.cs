@@ -42,6 +42,12 @@ namespace EncompassRest.Webhook.v1
         public string? ObjectUrn { get; set; }
 
         /// <summary>
+        /// Defines the Webhook retry type
+        /// </summary>
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+        public WebhookDeliveryPolicy? DeliveryPolicy{ get; set; }
+
+        /// <summary>
         /// Defines the events that make up the subscription.
         /// </summary>
         [JsonRequired]
