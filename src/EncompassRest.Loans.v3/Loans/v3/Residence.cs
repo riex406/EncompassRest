@@ -167,6 +167,11 @@ public sealed partial class Residence : DirtyExtensibleObject, IIdentifiable
     public string? LandlordStreet { get => GetValue<string?>(); set => SetValue(value); }
 
     /// <summary>
+    /// Residence MailingAddressIndicator
+    /// </summary>
+    public bool? MailingAddressIndicator { get => GetValue<bool?>(); set => SetValue(value); }
+
+    /// <summary>
     /// Residence NoLinkToDocTrackIndicator [BR0097], [CR0097]
     /// </summary>
     [LoanFieldProperty(ReadOnly = true)]
@@ -190,7 +195,7 @@ public sealed partial class Residence : DirtyExtensibleObject, IIdentifiable
     /// <summary>
     /// Residence Rent
     /// </summary>
-    public int? Rent { get => GetValue<int?>(); set => SetValue(value); }
+    public decimal? Rent { get => GetValue<decimal?>(); set => SetValue(value); }
 
     /// <summary>
     /// Residence RequestDate

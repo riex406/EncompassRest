@@ -241,7 +241,7 @@ public sealed partial class Correspondent : DirtyExtensibleObject, IIdentifiable
     /// <summary>
     /// Correspondent Appraised Value [CORRESPONDENT.X96]
     /// </summary>
-    public int? AppraisedValue { get => GetValue<int?>(); set => SetValue(value); }
+    public decimal? AppraisedValue { get => GetValue<decimal?>(); set => SetValue(value); }
 
     /// <summary>
     /// Correspondent Appraiser Name [CORRESPONDENT.X97]

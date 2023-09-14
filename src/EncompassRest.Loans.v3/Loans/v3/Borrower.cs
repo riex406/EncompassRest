@@ -519,7 +519,7 @@ public sealed partial class Borrower : DirtyExtensibleObject, IIdentifiable
     /// <summary>
     /// Borrower EquifaxKeyFactor5 [DISCLOSURE.X175], [DISCLOSURE.X178]
     /// </summary>
-    public bool? EquifaxKeyFactor5 { get => GetValue<bool?>(); set => SetValue(value); }
+    public string? EquifaxKeyFactor5 { get => GetValue<string?>(); set => SetValue(value); }
 
     /// <summary>
     /// Borrower EquifaxMaterialTermsCreditByScore [DISCLOSURE.X947], [DISCLOSURE.X948]
@@ -624,7 +624,7 @@ public sealed partial class Borrower : DirtyExtensibleObject, IIdentifiable
     /// <summary>
     /// Borrower ExperianKeyFactor5 [DISCLOSURE.X173], [DISCLOSURE.X176]
     /// </summary>
-    public bool? ExperianKeyFactor5 { get => GetValue<bool?>(); set => SetValue(value); }
+    public string? ExperianKeyFactor5 { get => GetValue<string?>(); set => SetValue(value); }
 
     /// <summary>
     /// Borrower ExperianMaterialTermsCreditByScore [DISCLOSURE.X943], [DISCLOSURE.X944]
@@ -2464,7 +2464,7 @@ public sealed partial class Borrower : DirtyExtensibleObject, IIdentifiable
     /// <summary>
     /// Borrower TransUnionKeyFactor5 [DISCLOSURE.X174], [DISCLOSURE.X177]
     /// </summary>
-    public bool? TransUnionKeyFactor5 { get => GetValue<bool?>(); set => SetValue(value); }
+    public string? TransUnionKeyFactor5 { get => GetValue<string?>(); set => SetValue(value); }
 
     /// <summary>
     /// Borrower TransUnionMaterialTermsCreditByScore [DISCLOSURE.X945], [DISCLOSURE.X946]

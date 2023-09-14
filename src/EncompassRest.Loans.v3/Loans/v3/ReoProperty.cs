@@ -161,7 +161,7 @@ public sealed partial class ReoProperty : DirtyExtensibleObject, IIdentifiable
     /// <summary>
     /// Mortgage Property Purchase Price [FM0023]
     /// </summary>
-    public int? PurchasePrice { get => GetValue<int?>(); set => SetValue(value); }
+    public decimal? PurchasePrice { get => GetValue<decimal?>(); set => SetValue(value); }
 
     /// <summary>
     /// Mortgage Property Monthly Gross Rental Income [FM0020]

@@ -216,7 +216,7 @@ public sealed partial class Employment : DirtyExtensibleObject, IIdentifiable
     public decimal? MilitaryPropPay { get => GetValue<decimal?>(); set => SetValue(value); }
 
     /// <summary>
-    /// Employment MonthlyIncomeAmount
+    /// Employment MonthlyIncomeAmount [FE0112]
     /// </summary>
     public decimal? MonthlyIncomeAmount { get => GetValue<decimal?>(); set => SetValue(value); }
 
