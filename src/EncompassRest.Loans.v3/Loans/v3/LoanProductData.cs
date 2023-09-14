@@ -439,6 +439,11 @@ public sealed partial class LoanProductData : DirtyExtensibleObject, IIdentifiab
     public decimal? HelocNewFinancingNotLinkedDrawAmount { get => GetValue<decimal?>(); set => SetValue(value); }
 
     /// <summary>
+    /// Omit 366 Day Leap Year Calculation [4913]
+    /// </summary>
+    public bool? HelocOmit366DayLeapYearIndicator { get => GetValue<bool?>(); set => SetValue(value); }
+
+    /// <summary>
     /// HELOC Paper Billing Fee [4588]
     /// </summary>
     public decimal? HelocPaperBillingFee { get => GetValue<decimal?>(); set => SetValue(value); }

@@ -1059,4 +1059,31 @@ public sealed partial class ClosingDocument : DirtyExtensibleObject, IIdentifiab
     /// State Disc - We Conduct Business As [DISCLOSURE.X205]
     /// </summary>
     public StringEnumValue<WeConductBusiness> WeConductBusiness { get => GetValue<StringEnumValue<WeConductBusiness>>(); set => SetValue(value); }
+
+    /// <summary>
+    /// Rescission Waived Flag [4907]
+    /// </summary>
+    public bool? RescissonWaivedFlag { get => GetValue<bool?>(); set => SetValue(value); }
+
+    /// <summary>
+    /// Actual Recinded Date [4908]
+    /// </summary>
+    [LoanFieldProperty(Format = LoanFieldFormat.DATETIME)]
+    public DateTime? ActualRescindedDate { get => GetValue<DateTime>(); set => SetValue(value); }
+
+
+    /// <summary>
+    /// Rescinded By [4909]
+    /// </summary>
+    public string? RescindedBy { get => GetValue<string?>(); set => SetValue(value); }
+
+    /// <summary>
+    /// Rescission Method Type [4910]
+    /// </summary>
+    public StringEnumValue<RescissionMethodType> RescissionMethodType { get => GetValue<StringEnumValue<RescissionMethodType>>(); set => SetValue(value); }
+
+    /// <summary>
+    /// Recession Receipt Type [4911]
+    /// </summary>
+    public StringEnumValue<RecissionReceiptType> RescissionReceiptType { get => GetValue<StringEnumValue<RecissionReceiptType>>(); set => SetValue(value); }
 }

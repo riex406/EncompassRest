@@ -436,4 +436,19 @@ public sealed partial class FreddieMac : DirtyExtensibleObject, IIdentifiable
     /// Freddie Mac MI Yrs Coverage [CASASRN.X156]
     /// </summary>
     public StringEnumValue<YearsOfCoverage> YearsOfCoverage { get => GetValue<StringEnumValue<YearsOfCoverage>>(); set => SetValue(value); }
+
+    /// <summary>
+    /// Freddie Mac Community Lending LTV [CASASRN.X217]
+    /// </summary>
+    public decimal? Ltv { get => GetValue<decimal?>(); set { SetValue(value); } }
+
+    /// <summary>
+    /// Freddie Mac Community Lending CLTV [CASASRN.X218]
+    /// </summary>
+    public decimal? Tltv { get => GetValue<decimal?>(); set { SetValue(value); } }
+
+    /// <summary>
+    /// Freddie Mac Community Lending HTLTV [CASASRN.X219]
+    /// </summary>
+    public decimal? Htltv { get => GetValue<decimal?>(); set { SetValue(value); } }
 }

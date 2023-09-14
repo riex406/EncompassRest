@@ -96,6 +96,11 @@ public sealed partial class Property : DirtyExtensibleObject, IIdentifiable
     public StringEnumValue<GseTitleMannerHeldDescription> GseTitleMannerHeldDescription { get => GetValue<StringEnumValue<GseTitleMannerHeldDescription>>(); set => SetValue(value); }
 
     /// <summary>
+    /// Property Info Instrument Number [4915]
+    /// </summary>
+    public string? InstrumentNumber { get => GetValue<string?>(); set => SetValue(value); }
+
+    /// <summary>
     /// Trans Details Construction Phase Disclosed Separately [4084]
     /// </summary>
     public bool? IsConstructionPhaseDisclosedSeparately { get => GetValue<bool?>(); set => SetValue(value); }
@@ -416,6 +421,16 @@ public sealed partial class Property : DirtyExtensibleObject, IIdentifiable
     /// Subject Property Yr Built [18]
     /// </summary>
     public string? StructureBuiltYear { get => GetValue<string?>(); set => SetValue(value); }
+
+    /// <summary>
+    /// Property Info Suffix [4914]
+    /// </summary>
+    public string? Suffix { get => GetValue<string?>(); set => SetValue(value); }
+
+    /// <summary>
+    /// Property Info Tax Map Number [4916]
+    /// </summary>
+    public string? TaxMapNumber { get => GetValue<string?>(); set => SetValue(value); }
 
     /// <summary>
     /// Continuous Money Loan (Texas Only) [3199]

@@ -27,6 +27,12 @@ public sealed partial class StatementCreditDenial : DirtyExtensibleObject, IIden
     public bool? CollateralNotSufficient { get => GetValue<bool?>(); set => SetValue(value); }
 
     /// <summary>
+    /// Collection Action or Judgment [DENIAL.X103]
+    /// </summary>
+    [LoanFieldProperty(OptionsJson = "{\"Y\":\"Collection Action or Judgment\"}")]
+    public bool? CollectionActionOrJudgement { get => GetValue<bool?>(); set { SetValue(value); } }
+
+    /// <summary>
     /// Denial Other - Credit Appl Incomplete [DENIAL.X57]
     /// </summary>
     [LoanFieldProperty(OptionsJson = "{\"Y\":\"Credit Application Incomplete\"}")]
@@ -182,6 +188,18 @@ public sealed partial class StatementCreditDenial : DirtyExtensibleObject, IIden
     /// </summary>
     [LoanFieldProperty(OptionsJson = "{\"Y\":\"Excessive Obligations\"}")]
     public bool? ExcessiveObligations { get => GetValue<bool?>(); set => SetValue(value); }
+
+    /// <summary>
+    /// Excessive Obligation to Income [DENIAL.X104]
+    /// </summary>
+    [LoanFieldProperty(OptionsJson = "{\"Y\":\"Excessive Obligations in Relation to Income\"}")]
+    public bool? ExcessiveObligationsToIncome { get => GetValue<bool?>(); set { SetValue(value); } }
+
+    /// <summary>
+    /// Foreclosure Or Repossesion [DENIAL.X102]
+    /// </summary>
+    [LoanFieldProperty(OptionsJson = "{\"Y\":\"Forclosure or Reposession\"}")]
+    public bool? ForclosureOrRepossession { get => GetValue<bool?>(); set { SetValue(value); } }
 
     /// <summary>
     /// Denial Credit - Garnish, Attach, Foreclsr, Repo, Suit [DENIAL.X34]

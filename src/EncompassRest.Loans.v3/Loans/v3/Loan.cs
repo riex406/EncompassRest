@@ -84,6 +84,11 @@ public sealed partial class Loan : DirtyExtensibleObject, IIdentifiable
     public DateTime? AprDisclosureDate { get => GetValue<DateTime?>(); set => SetValue(value); }
 
     /// <summary>
+    /// Arm Index Precision [4912]
+    /// </summary>
+    public StringEnumValue<ArmIndexPrecision> ArmIndexPrecision { get => GetValue<StringEnumValue<ArmIndexPrecision>>(); set => SetValue(value); }
+
+    /// <summary>
     /// Loan Info ARM Descr [248]
     /// </summary>
     public string? ArmTypeDescription { get => GetValue<string?>(); set => SetValue(value); }
